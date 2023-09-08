@@ -1,0 +1,5 @@
+.map-container {
+  width: 100%;
+  height: calc(100% - 130px);
+  background-color: cadetblue;
+}

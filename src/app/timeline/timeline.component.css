@@ -1,0 +1,34 @@
+.timeline-container {
+  background-color: #333;
+  height: 130px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.timeline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  position: absolute;
+  transform: translateX(0);
+  height: 100%;
+  cursor: grab;
+  display: flex;
+  align-items: center;
+}
+
+.timeline.active {
+  /* transition: transform 0.5s cubic-bezier(0.25, 0.72, 0.51, 0.96); */
+}
+
+.timeline.grabbing {
+  cursor: grabbing; /* Kursor typu "grabbing" podczas przeciągania */
+}
+
+.slide {
+  width: 300px;
+  height: 100px;
+  background-color: cadetblue;
+  margin: 0 5px;
+  /* pointer-events: none; */
+}
